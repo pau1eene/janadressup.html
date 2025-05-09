@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create an Account</title>
+    <style>
+         body {
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #e0e0e09b;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        }
+        .container {
+            width: 100%;
+            max-width: 550px;
+            background-color: #ffffff;
+            padding: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        hr {
+            margin-bottom: 20px;
+            border: 0;
+            border-top: 1px solid #ccc;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 16px;
+            color: #333;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: rgb(240, 188, 91);
+            color: black;
+            border: none;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #4c994c;
+        }
+        p {
+            text-align: center;
+            font-size: 14px;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        header {
+      background: #111;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+    }
+
+    header > p {
+      color: #e60012;
+      margin: 0;
+    }
+
+    .menu {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    .menu > li {
+      position: relative;
+    }
+
+    .menu a {
+      text-decoration: none;
+      color: #f2f2f2;
+      padding: 15px 20px;
+      display: block;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 14px;
+    }
+
+    .menu a:hover {
+      background-color: #585858;
+    }
+
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: #585858;
+      border: 1px solid #ccc;
+      min-width: 160px;
+      z-index: 1000;
+    }
+
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+
+    .dropdown-menu li {
+      border-bottom: 1px solid #eee;
+    }
+
+    .dropdown-menu li:last-child {
+      border-bottom: none;
+    }
+    <style>
+  /* Existing styles remain unchanged... */
+
+  @media (max-width: 600px) {
+    body {
+      padding: 20px;
+    }
+
+    .container {
+      padding: 20px 15px;
+    }
+
+    input {
+      font-size: 15px;
+      padding: 10px;
+    }
+
+    button {
+      font-size: 15px;
+      padding: 10px;
+    }
+
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .menu {
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .menu a {
+      padding: 10px 15px;
+      font-size: 13px;
+    }
+
+    .dropdown-menu {
+      position: static;
+      border: none;
+      background: none;
+      box-shadow: none;
+    }
+
+    .dropdown-menu li {
+      border: none;
+    }
+
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+  }
+</style>
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sign-in">
+            <h1>Create an Account</h1>
+            <hr>
+            <form action="/sign-in" method="POST">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+
+                <button type="submit">Sign In</button>
+            </form>
+            <p>Already have an account? <a href="sign-in.html">Sign In</a></p>
+        </div>
+    </div>
+</body>
+</html>

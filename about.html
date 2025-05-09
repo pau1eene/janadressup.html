@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <title>About Us</title>
+    <style>
+        body {
+          margin: 0;
+          font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+          background-color: #fff;
+          color: #111;
+        }
+        header {
+          background-color: #fffefe;
+          display: flex;
+          padding: 10px;
+          justify-content: space-between;
+          align-items: center;
+        }
+        header > p {
+          color: black;
+          padding-right: 10px;
+          padding-left: 10px;
+        }
+        .menu {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          display: flex;
+          justify-content: center;
+        }
+        .menu > li {
+          position: relative;
+        }
+    
+        .menu a {
+          text-decoration: none;
+          color: black;
+          padding: 15px 20px;
+          display: block;
+          font-weight: bold;
+          text-transform: uppercase;
+          font-size: 14px;
+        }
+    
+        .menu a:hover {
+          background-color: #dfd9d9;
+        }
+    
+        .dropdown-menu {
+          display: none;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          background: #585858;
+          border: 1px solid #ccc;
+          min-width: 160px;
+          z-index: 1000;
+        }
+    
+        .dropdown:hover .dropdown-menu {
+          display: block;
+        }
+    
+        .dropdown-menu li {
+          border-bottom: 1px solid #eee;
+        }
+    
+        .dropdown-menu li:last-child {
+          border-bottom: none;
+        }
+        main h1 {
+          font-size: 28px;
+          margin-bottom: 10px;
+          text-align: center;
+        }
+    
+        main p {
+          font-size: 18px;
+          color: #555;
+          text-align: center;
+        }
+        .clothes-container {
+          display: flex;
+          justify-content: space-around;
+          flex-wrap: wrap;
+          margin-top: 30px;
+        }
+        .clothing-item {
+          width: 200px;
+          height: 250px;
+          background-color: #f4f4f4;
+          margin: 10px;
+          padding: 15px;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          border-radius: 8px;
+        }
+        .clothing-item:hover {
+          box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+        @media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .menu {
+    flex-direction: column;
+    width: 100%;
+  }
+  .clothes-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .clothing-item {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  header > p {
+    font-size: 18px;
+  }
+  .menu a {
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+}
+
+      </style>
+</head>
+<body>
+    <header>
+        <p>JANA DRESS UP</p>
+        <nav>
+          <ul class="menu">
+            <li><a target="_blank" href="index.html">Home</a></li>
+        
+            <li class="dropdown">
+              <a href="#">Shop</a>
+              <ul class="dropdown-menu">
+                <li><a  href="men.html" target="_blank">Men</a></li>
+                <li><a  href="womens.html" target="_blank">Women</a></li>
+                <li><a href="kids.html" target="_blank">Kids</a></li>
+              </ul>
+            </li>
+        
+            <li><a href="about.html" target="_blank">About</a></li>
+        
+            <li class="dropdown">
+              <a href="acount.html">Account</a>
+              <ul class="dropdown-menu">
+                <li><a href="sign-in.html" target="_blank">Sign In</a></li>
+                <li><a href="wishlist.html" target="_blank">Wishlist</a></li>
+                <li><a href="cart.html" target="_blank">Cart</a></li>
+                <li><a href="checkout.html" target="_blank">Checkout</a></li>
+                <li><a href="manage-items.html" target="_blank">Add/Remove Items</a></li>
+                <li><a href="summary.html" target="_blank">Summary Total</a></li>
+              </ul>
+            </li>
+        
+            <li><a href="contact.html" target="_blank">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+</head>
+<hr>
+
+<body>
+        <div class="flex flex-col items-center justify-center p-10 text-center">
+            <h2 class="font-playfair text-2xl md:text-3xl font-semibold tracking-widest text-black mb-2" style="letter-spacing: 0.2em;">
+                ABOUT US
+            </h2>
+            <div class="w-12 border-b-2 border-gray-700 mb-6"></div>
+            <p class="text-gray-500 text-sm md:text-base max-w-xs mb-10 leading-relaxed">
+                Jana Dress Up is a locally based fashion brand that focuses on creating high-quality, affordable dresses that celebrate individuality. The brand empowers customers to express their unique style through thoughtfully designed collections. Jana Dress Up is committed to local craftsmanship, ensuring each dress is made with care and attention to detail. By sourcing materials locally and working with skilled artisans, Jana Dress Up supports the community and guarantees the highest standards of quality. The brand offers a diverse range of styles, catering to various occasions and personal styles. Jana Dress Up celebrates fashion that is both beautiful and affordable, enabling customers to find the perfect dress that reflects their style.
+            </p>
+           
+            <button onclick="document.location='index.html'" class="w-32 border border-gray-400 text-gray-600 text-xs md:text-sm py-2 mb-4 hover:bg-gray-100 transition"></a>SERVICE</button>
+            <button onclick="document.location='contact.html'" class="w-32 border border-gray-400 text-gray-600 text-xs md:text-sm py-2 mb-8 hover:bg-gray-100 transition">CONTACT</button>
+            <div class="flex space-x-6 text-gray-800 text-xl">
+                <a aria-label="x" class="hover:text-gray-600" href="#"><i class="fab fa-twitter"></i></a>
+                <a aria-label="fb" class="hover:text-gray-600" href="#"><i class="fab fa-facebook-f"></i></a>
+                <a aria-label="ig" class="hover:text-gray-600" href="#"><i class="fab fa-instagram"></i></a>
+                <a aria-label="Pinterest" class="hover:text-gray-600" href="#"><i class="fab fa-pinterest-p"></i></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
