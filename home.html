@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>jANA DRESS UP</title>
+  <link rel="stylesheet" href="mystyle.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      background-color: #fff;
+      color: #111;
+    }
+
+    header {
+      background-color: white;
+      border-bottom: 1px solid #e0e0e0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+    }
+
+    header h1 {
+      font-size: 20px;
+      margin: 0;
+      letter-spacing: 2px;
+    }
+
+    nav {
+      background-color: #fff;
+    }
+
+    .menu {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 10px;
+    }
+
+    .menu > li {
+      position: relative;
+    }
+
+    .menu a {
+      text-decoration: none;
+      color: #111;
+      padding: 10px 15px;
+      display: block;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 14px;
+    }
+
+    .menu a:hover {
+      background-color: #f2f2f2;
+    }
+
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: white;
+      border: 1px solid #ccc;
+      min-width: 160px;
+      z-index: 1000;
+    }
+
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+
+    .dropdown-menu li {
+      border-bottom: 1px solid #eee;
+    }
+
+    .dropdown-menu li:last-child {
+      border-bottom: none;
+    }
+
+    main {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    main h2 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    main p {
+      font-size: 18px;
+      color: #555;
+    }
+
+    .image-wrapper {
+      display: inline-block;
+      overflow: hidden;
+      border-radius: 10px;
+      margin-top: 30px;
+      max-width: 100%;
+    }
+
+    .zoom-image {
+      display: block;
+      width: 100%;
+      height: auto;
+      transition: transform 0.5s ease, filter 0.3s ease;
+    }
+
+    .image-wrapper:hover .zoom-image {
+      transform: scale(1.05);
+      filter: brightness(1.05);
+    }
+
+    footer {
+      background-color: #111;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    } 
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>JANA DRESS UP</h1>
+  <nav>
+    <ul class="menu">
+      <li><a href="home.html">Home</a></li>
+
+      <li class="dropdown">
+        <a href="#">Shop</a>
+        <ul class="dropdown-menu">
+          <li><a href="dress.html">Dress</a></li>
+          <li><a href="paired-dress.html">Paired Clothes</a></li>
+        </ul>
+      </li>
+
+      <li><a href="about.html">About</a></li>
+
+      <li class="dropdown">
+        <a href="#">Account</a>
+        <ul class="dropdown-menu">
+          <li><a href="sign-in.html">Sign In</a></li>
+          <li><a href="wishlist.html">Wishlist</a></li>
+          <li><a href="cart.html">Cart</a></li>
+          <li><a href="checkout.html">Checkout</a></li>
+          <li><a href="manage-items.html">Add/Remove Items</a></li>
+          <li><a href="summary.html">Summary Total</a></li>
+        </ul>
+      </li>
+
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <h2>Welcome to Our Clothing Brand</h2>
+  <p>Fashion for every body, every style! Come to Jana Dress Up, a clothing line offering fashionable, 
+    high-quality. Express <br> your unique style with our high-quality 
+    fabrics without breaking the bank. Shop now!</p>
+
+  <div class="image-wrapper">
+    <img src="pink.jpg" alt="Fashion Banner" class="zoom-image">
+  </div>
+</main>
+
+<footer>
+  <p>&copy; 2025 Clothing Brand. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
